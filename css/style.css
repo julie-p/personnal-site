@@ -1,7 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 /*Shape divider*/
-.custom-shape-divider-bottom-1604697511 {
+.custom-shape-divider-top-1604951824 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1604951824 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 56px;
+}
+
+.custom-shape-divider-top-1604951824 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1604951234 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -11,14 +31,14 @@
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1604697511 svg {
+.custom-shape-divider-bottom-1604951234 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 124px;
+    height: 143px;
 }
 
-.custom-shape-divider-bottom-1604697511 .shape-fill {
+.custom-shape-divider-bottom-1604951234 .shape-fill {
     fill: #FFFFFF;
 }
 
@@ -66,6 +86,7 @@
 :root {
     --dark-blue: #3e4c8b;
     --light-blue: #b9d2e8;
+    --bright-blue: #9efffd;
     --white-color: #fef8f8;
     --grey-color: #b4b2b6;
     --pink-color: #ffc6bf;
@@ -160,7 +181,7 @@ img {
     right: 0;
     margin: auto;
     top: 2rem;
-    background-color: var(--yellow-color);
+    background-color: var(--bright-blue);
 }
 
 .bd-grid {
@@ -179,8 +200,9 @@ img {
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: var(--white-color);
+    background-color: transparent;
     position: absolute;
+    color: #fff;
 }
 
 /* ----------------------------NAV---------------------------------- */
@@ -193,6 +215,7 @@ img {
 
 @media screen and (max-width: 768px) {
     .nav__menu {
+        position: fixed;
         top: 0;
         right: -100%;
         width: 80%;
@@ -222,7 +245,7 @@ img {
 }
 
 .nav__logo {
-    color: var(--orange-color);
+    color: var(--dark-color);
     font-family: var(--accent-font);
     font-weight: 600;
     font-size: var(--h2-font-size);
@@ -231,7 +254,7 @@ img {
 .nav__toggle {
     color: var(--orange-color);
     font-weight: 600;
-    font-size: 26px;
+    font-size: var(--h2-font-size);
     cursor: pointer;
 }
 
@@ -254,7 +277,7 @@ img {
 /* -------------------- HOME --------------------------*/
 .home {
     width: 100%;
-    background: url('../images/bg.jpg') bottom right no-repeat;
+    background: url('../images/bg-2.png') bottom right no-repeat;
     background-size: 750px 800px;
     display: flex;
     align-items: center;
@@ -297,6 +320,12 @@ img {
 }
 
 /*-------------------- ABOUT ---------------- */
+.about {
+    background-color: var(--white-color);
+    position: relative;
+    padding: 2rem 0 5rem 0;
+}
+
 .about__container {
     justify-items: center;
     row-gap: 2rem;
@@ -376,10 +405,11 @@ img {
     flex: 1;
     position: relative;
     z-index: 0;
+    width: 80%;
     margin: 0 auto;
 }
 
-.skills__img::before{
+/* .skills__img::before{
     content: '';
     position: absolute;
     top: 0;
@@ -389,7 +419,7 @@ img {
     background-image: linear-gradient(to right, var(--orange-color), #fff);
     z-index: 1;
     opacity: 0.5;
-}
+} */
 
 .skills__img img {
     border-radius: .5rem;
@@ -414,7 +444,7 @@ img {
 
 .portfolio__img img {
     border-radius: .5rem;
-    margin: 1rem
+    margin: 1rem;
 }
 
 .portfolio__link {
@@ -442,9 +472,9 @@ img {
 
 /* -------------------- CONTACT --------------------------*/
 .contact {
-    background: url(../images/contact-bg.png) bottom left no-repeat;
+    background: url(../images/contact.png) bottom left no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     padding: 8rem;
 }
 
@@ -564,11 +594,11 @@ img {
     }
 
     .nav__link {
-        color: var(--orange-color);
+        color: var(--dark-color);
     }
 
     .nav__link:hover {
-        color: var(--yellow-color);
+        color: var(--orange-color);
     }
 
     .active::after {
@@ -582,9 +612,9 @@ img {
     }
 
     .home {
-        background: url(../images/bg.jpg) center no-repeat;
+        background: url(../images/bg-2.png) center no-repeat;
         background-size: cover;
-        /* background-attachment: fixed; */
+        background-attachment: fixed;
     }
 
     .home__img {
@@ -596,7 +626,7 @@ img {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         text-align: initial;
-        padding: 4rem 0;
+        padding: 1rem 0 4rem 0;
     }
 
     .about__img {
