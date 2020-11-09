@@ -453,6 +453,7 @@ img {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgba(255,255,255,.3);
@@ -460,6 +461,15 @@ img {
     cursor: pointer;
     backdrop-filter: blur(10px);
     transition: .3s;
+}
+
+.portfolio__link p, .portfolio__link span {
+    width: 80%;
+    text-align: center;
+}
+
+.portfolio__link a {
+    font-size: 1rem;
 }
 
 .portfolio__img:hover .portfolio__link {
