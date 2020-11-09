@@ -175,7 +175,7 @@ img {
 .section-title::after{
     position: absolute;
     content: "";
-    width: 52px;
+    width: 50px;
     height: .18rem;
     left: 0;
     right: 0;
@@ -472,7 +472,7 @@ img {
 
 /* -------------------- CONTACT --------------------------*/
 .contact {
-    background: url(../images/contact.png) bottom left no-repeat;
+    background: url(../images/bg-2.png) bottom left no-repeat;
     background-size: cover;
     background-attachment: fixed;
     padding: 8rem;
@@ -573,7 +573,7 @@ img {
     }
 
     .section-title::after {
-        width: 64px;
+        width: 80px;
         top: 3rem;
     }
 
