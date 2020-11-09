@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 /*Shape divider*/
-.custom-shape-divider-top-1604951824 {
+.custom-shape-divider-top-1604957484 {
     position: absolute;
     top: 0;
     left: 0;
@@ -10,14 +10,14 @@
     line-height: 0;
 }
 
-.custom-shape-divider-top-1604951824 svg {
+.custom-shape-divider-top-1604957484 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 56px;
+    height: 130px;
 }
 
-.custom-shape-divider-top-1604951824 .shape-fill {
+.custom-shape-divider-top-1604957484 .shape-fill {
     fill: #FFFFFF;
 }
 
@@ -305,7 +305,7 @@ img {
 .home__scroll {
     align-self: flex-end;
     text-align: left;
-    padding-bottom: 8rem;   
+    padding-bottom: 2rem;   
     animation: blinker 1.5s linear infinite;
 }
 
@@ -323,7 +323,7 @@ img {
 .about {
     background-color: var(--white-color);
     position: relative;
-    padding: 2rem 0 5rem 0;
+    padding: 5rem 0 5rem 0;
 }
 
 .about__container {
@@ -408,18 +408,6 @@ img {
     width: 80%;
     margin: 0 auto;
 }
-
-/* .skills__img::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to right, var(--orange-color), #fff);
-    z-index: 1;
-    opacity: 0.5;
-} */
 
 .skills__img img {
     border-radius: .5rem;
