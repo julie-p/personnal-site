@@ -9,6 +9,10 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face{
+    font-family:"Bauhaus_93 W05 Regular";
+    src:url("../fonts/86d777be-ba3c-4a21-a94a-41b4f8ddd94b.woff2") format("woff2"),url("Fonts/5683385/9c942d13-7269-478c-b12e-61ac23fc3e16.woff") format("woff");
+}
 
 /*Shape divider*/
 .custom-shape-divider-bottom-1605027222 {
@@ -87,7 +91,7 @@
 
 :root {
     --body-font: 'Merriweather Sans';
-    --accent-font: 'OPTIBubbleDoubleBold', 'Parisienne', cursive;
+    --accent-font: 'Bauhaus_93 W05 Regular', 'OPTIBubbleDoubleBold', 'Parisienne', cursive;
     --big-font-size: 6.25rem;
     --medium-font-size: 5.5rem;
     --h2-font-size: 1.25rem;
