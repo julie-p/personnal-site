@@ -230,7 +230,7 @@ img {
     color: var(--dark-color);
     font-family: var(--accent-font);
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .nav__toggle {
