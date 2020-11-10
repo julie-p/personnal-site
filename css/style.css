@@ -772,6 +772,7 @@ img {
 
     .home__scroll-link {
         writing-mode: vertical-lr;
+        font-size: 1.4rem;
     }
 
     .home__scroll-link i {
