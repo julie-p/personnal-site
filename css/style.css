@@ -597,7 +597,11 @@ img {
 }
 
 .footer__data span {
-    font-size: .8rem;
+    font-size: .7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: none;
 }
 
 .footer__title {
@@ -785,6 +789,11 @@ img {
 
     .footer__data {
         text-align: left;
+        line-height: 1.8;
+    }
+
+    .footer__data span {
+        line-height: 11;
     }
 }
 
