@@ -230,13 +230,13 @@ img {
     color: var(--dark-color);
     font-family: var(--accent-font);
     font-weight: 600;
-    font-size: var(--h2-font-size);
+    font-size: 2rem;
 }
 
 .nav__toggle {
     color: var(--yellow-color);
     font-weight: 600;
-    font-size: var(--h2-font-size);
+    font-size: 2.5rem;
     cursor: pointer;
 }
 
@@ -321,14 +321,26 @@ img {
 .about__img {
     display: flex;
     justify-content: center;
+    position: relative;
     width: 110px;
     height: 120px;
     border-radius: 50%;
-    overflow: hidden;
+}
+
+.about__img::before {
+    position: absolute;
+    content: '';
+    right: -20px;
+    top: 15px;
+    border: 6px solid var(--yellow-color);
+    opacity: .8;
+    width: 100%;
+    height: 100%;
 }
 
 .about__img img {
-    width: 110px;
+    max-width: 100%;
+    z-index: 1;
 }
 
 .about__subtitle {
@@ -391,25 +403,23 @@ img {
 .skills__img {
     flex: 1;
     position: relative;
-    z-index: 0;
     width: 80%;
     margin: 0 auto;
 }
 
-.skills__img img {
-    border-radius: .5rem;
-}
-
 .skills__img::before {
-    content: '';
     position: absolute;
-    top: 0;
-    left: 0;
+    content: '';
+    right: -30px;
+    top: 30px;
+    border: 10px solid var(--yellow-color);
+    opacity: .8;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right, var(--dark-color), var(--white-color));
-    z-index: 1;
-    opacity: 0.5;
+}
+
+.skills__img img {
+    border-radius: .5rem;
 }
 
 /* -------------------- PORTFOLIO --------------------------*/
@@ -660,6 +670,10 @@ img {
         right: 10%;
     }
 
+    .about .section-title {
+        margin-bottom: 0;
+    }
+
     .about__container {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
@@ -667,9 +681,24 @@ img {
         padding: 1rem 0 4rem 0;
     }
 
+    .about__subtitle {
+        margin-top: 4rem;
+    }
+
     .about__img {
         width: 200px;
         height: 200px;
+    }
+
+    .about__img::before {
+        position: absolute;
+        content: '';
+        right: -30px;
+        top: 15px;
+        border: 10px solid var(--yellow-color);
+        opacity: .8;
+        width: 105%;
+        height: 125%;
     }
     
     .about__img img {
