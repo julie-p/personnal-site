@@ -474,17 +474,13 @@ img {
     cursor: pointer;
     backdrop-filter: blur(10px);
     transition: .3s;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .portfolio__link p, .portfolio__link span {
     width: 80%;
     text-align: center;
     color: var(--dark-color);
-}
-
-.portfolio__link a {
-    font-size: 1rem;
 }
 
 .portfolio__link div {
@@ -495,6 +491,7 @@ img {
     color: var(--yellow-color);
     font-family: var(--accent-font);
     font-weight: 600;
+    letter-spacing: 1.5px;
 }
 
 .portfolio__img:hover .portfolio__link {
@@ -511,7 +508,7 @@ img {
 }
 
 .portfolio__link-name i {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     margin: .2rem;
 }
 
@@ -750,6 +747,10 @@ img {
 
     .portfolio {
         padding-top: 10rem;
+    }
+
+    .portfolio__link {
+        font-size: 14px;
     }
 
     .portfolio__container {
