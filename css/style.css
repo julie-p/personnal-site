@@ -514,11 +514,16 @@ img {
 
 .contact__social i {
     font-size: 2rem;
+    border-radius: 50%;
+    padding: 10px;
+    color: #fff;
+    background-color: var(--dark-color);
 }
 
 .contact__social i:hover {
-    transform: scale(1.4);
+    transform: scale(1.1);
     transition: .5s ease-in-out;
+    background-color: var(--grey-color);
 }
 
 .contact__subtitle {
