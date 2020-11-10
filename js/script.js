@@ -67,7 +67,7 @@ sr.reveal('.about__social-icon', {origin:'right', delay: 600, interval: 200})
 sr.reveal('.skills__text', {delay:200})
 sr.reveal('.skills__subtitle', {origin:'left'})
 sr.reveal('.skills__name', {origin:'left', distance: '20px', delay: 50, interval: 100})
-/* sr.reveal('.skills__img', {delay: 400}) */
+sr.reveal('.skills__img', {origin:'right', delay: 200})
 
 /* Scroll Portfolio */
 sr.reveal('.portfolio__img', {interval: 200})
