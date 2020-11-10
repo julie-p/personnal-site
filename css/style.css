@@ -596,10 +596,14 @@ img {
     row-gap: 2rem;
 }
 
+.footer__data span {
+    font-size: .8rem;
+}
+
 .footer__title {
     font-family: var(--accent-font);
     font-size: var(--normal-font-size);
-    letter-spacing: 1.2px;
+    letter-spacing: 1.5px;
     color: var(--white-color);
     margin-bottom: var(--mb-2);
 }
