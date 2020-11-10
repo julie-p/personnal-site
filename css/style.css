@@ -271,7 +271,7 @@ img {
 /* -------------------- HOME --------------------------*/
 .home {
     width: 100%;
-    background: url('../images/background.png') center left no-repeat;
+    background: url('../images/background.png') bottom left no-repeat;
     background-size: 750px 800px;
     display: flex;
     align-items: center;
@@ -287,6 +287,7 @@ img {
 .home__title {
     align-self: flex-end;
     text-align: left;
+    margin: 7rem 5rem;
     font-size: var(--medium-font-size);
     color: var(--dark-color);
     line-height: .8;
@@ -684,13 +685,14 @@ img {
     }
 
     .home {
-        background: url(../images/background.png) center no-repeat;
+        background: url(../images/background.png) no-repeat;
         background-size: cover;
         background-attachment: fixed;
     }
 
     .home__title {
-        font-size: 5.5rem;
+        font-size: 8.5rem;
+        margin: 10rem 10rem;
     }
 
     .home__img {
@@ -796,6 +798,18 @@ img {
 
     .nav__logo {
         font-size: 1.8rem;
+    }
+
+    .home {
+        background: url(../images/background.png) center left no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+
+    .home__title {
+        font-size: 6.5rem;
+        margin: initial;
     }
 
     .home__title {
