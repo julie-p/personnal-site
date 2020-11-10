@@ -394,6 +394,7 @@ img {
 
 .skills__img img {
     border-radius: .5rem;
+    max-width: 800px;
 }
 
 /* -------------------- PORTFOLIO --------------------------*/
@@ -449,7 +450,7 @@ img {
 }
 
 .portfolio__link tag {
-    color: var(--bright-blue);
+    color: var(--orange-color);
 }
 
 .portfolio__img:hover .portfolio__link {
