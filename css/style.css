@@ -1,27 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 /*Shape divider*/
-.custom-shape-divider-top-1604957484 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1604957484 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 130px;
-}
-
-.custom-shape-divider-top-1604957484 .shape-fill {
-    fill: #FFFFFF;
-}
-
-.custom-shape-divider-bottom-1604951234 {
+.custom-shape-divider-bottom-1605027222 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -31,18 +11,18 @@
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1604951234 svg {
+.custom-shape-divider-bottom-1605027222 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 143px;
+    height: 150px;
 }
 
-.custom-shape-divider-bottom-1604951234 .shape-fill {
+.custom-shape-divider-bottom-1605027222 .shape-fill {
     fill: #FFFFFF;
 }
 
-.custom-shape-divider-top-1604929874 {
+.custom-shape-divider-top-1605027459 {
     position: absolute;
     top: 0;
     left: 0;
@@ -51,18 +31,19 @@
     line-height: 0;
 }
 
-.custom-shape-divider-top-1604929874 svg {
+.custom-shape-divider-top-1605027459 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 82px;
+    height: 150px;
+    transform: rotateY(180deg);
 }
 
-.custom-shape-divider-top-1604929874 .shape-fill {
+.custom-shape-divider-top-1605027459 .shape-fill {
     fill: #FFFFFF;
 }
 
-.custom-shape-divider-bottom-1604929905 {
+.custom-shape-divider-bottom-1605027522 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -72,14 +53,14 @@
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1604929905 svg {
+.custom-shape-divider-bottom-1605027522 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 82px;
+    height: 150px;
 }
 
-.custom-shape-divider-bottom-1604929905 .shape-fill {
+.custom-shape-divider-bottom-1605027522 .shape-fill {
     fill: #FFFFFF;
 }
 
@@ -93,7 +74,7 @@
     --orange-color: #fba397;
     --green-color: #77b0a1;
     --yellow-color: #fcbe37;
-    --dark-color: #2A3B47;
+    --dark-color: #1e272e;
     --text-color: #697477;
 }
 
@@ -182,7 +163,7 @@ img {
     right: 0;
     margin: auto;
     top: 2rem;
-    background-color: var(--bright-blue);
+    background-color: var(--yellow-color);
 }
 
 .bd-grid {
@@ -214,6 +195,24 @@ img {
     align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, .3);
+        transition: .5s;
+        backdrop-filter: blur(50px);
+    }
+
+    .nav__list {
+        padding: 50% 0
+    }
+}
+
 .nav__item {
     margin-bottom: var(--mb-4);
 }
@@ -224,7 +223,7 @@ img {
 }
 
 .nav__link:hover {
-    color: var(--orange-color);
+    color: var(--yellow-color);
 }
 
 .nav__logo {
@@ -235,7 +234,7 @@ img {
 }
 
 .nav__toggle {
-    color: var(--orange-color);
+    color: var(--yellow-color);
     font-weight: 600;
     font-size: var(--h2-font-size);
     cursor: pointer;
@@ -254,13 +253,13 @@ img {
     height: .18rem;
     left: 0;
     top: 2rem;
-    background-color: var(--orange-color);
+    background-color: var(--yellow-color);
 }
 
 /* -------------------- HOME --------------------------*/
 .home {
     width: 100%;
-    background: url('../images/bg-2.png') bottom right no-repeat;
+    background: url('../images/background.png') center left no-repeat;
     background-size: 750px 800px;
     display: flex;
     align-items: center;
@@ -269,7 +268,7 @@ img {
 }
 
 .home__container {
-    height: 90vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -299,14 +298,18 @@ img {
 .home__scroll-link {
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
-    color: var(--dark-color);
+    color: var(--white-color);
 }
 
 /*-------------------- ABOUT ---------------- */
 .about {
-    background-color: var(--white-color);
+    background-color: var(--dark-color);
     position: relative;
-    padding: 5rem 0 5rem 0;
+    padding: 2rem 0 10rem 0;
+}
+
+.about .section-title {
+    color: var(--white-color);
 }
 
 .about__container {
@@ -330,12 +333,13 @@ img {
 
 .about__subtitle {
     font-size: var(--h2-font-size);
-    color: var(--orange-color);
+    color: var(--yellow-color);
     margin-bottom: var(--mb-1);
 }
 
 .about__text {
     margin-bottom: var(--mb-4);
+    color: var(--white-color);
 }
 
 .about__profession {
@@ -349,7 +353,7 @@ img {
 }
 
 .about__social-icon:hover {
-    color: var(--orange-color);
+    color: var(--bright-blue);
 }
 
 /* -------------------- SKILLS -------------------- */
@@ -365,7 +369,7 @@ img {
 }
 
 .skills__subtitle {
-    color: var(--orange-color);
+    color: var(--yellow-color);
     margin-bottom: var(--mb-3);
 }
 
@@ -375,12 +379,12 @@ img {
     margin-right: var(--mb-2);
     margin-bottom: var(--mb-3);
     padding: .25rem .5rem;
-    background-color: var(--white-color);
+    color: var(--dark-color);
     border-radius: .25rem;
 }
 
 .skills__name:hover {
-    background-color: var(--orange-color);
+    background-color: var(--dark-color);
     color: var(--white-color);
 }
 
@@ -394,14 +398,29 @@ img {
 
 .skills__img img {
     border-radius: .5rem;
-    max-width: 800px;
+}
+
+.skills__img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, var(--dark-color), var(--white-color));
+    z-index: 1;
+    opacity: 0.5;
 }
 
 /* -------------------- PORTFOLIO --------------------------*/
 .portfolio {
-    background-color: var(--white-color);
+    background-color: var(--dark-color);
     position: relative;
-    padding: 5rem 0 12rem 0;
+    padding: 10rem 0 15rem 0;
+}
+
+.portfolio .section-title {
+    color: var(--white-color);
 }
 
 .portfolio__container {
@@ -450,7 +469,8 @@ img {
 }
 
 .portfolio__link tag {
-    color: var(--orange-color);
+    color: var(--yellow-color);
+    font-weight: 600;
 }
 
 .portfolio__img:hover .portfolio__link {
@@ -458,7 +478,12 @@ img {
 }
 
 .portfolio__link-name {
-    color: var(--bright-blue);
+    margin-top: .3rem;
+    color: var(--dark-color);
+}
+
+.portfolio__link-name:hover {
+    color: var(--yellow-color);
 }
 
 .portfolio__link-name i {
@@ -468,7 +493,7 @@ img {
 
 /* -------------------- CONTACT --------------------------*/
 .contact {
-    background: url(../images/bg-2.png) bottom left no-repeat;
+    background: url(../images/contact-bg.png) center left no-repeat;
     background-size: cover;
     background-attachment: fixed;
     padding: 8rem;
@@ -481,7 +506,7 @@ img {
 
 .contact__subtitle {
     font-size: var(--normal-font-size);
-    color: var(--orange-color);
+    color: var(--yellow-color);
 }
 
 .contact__text {
@@ -507,7 +532,7 @@ img {
 
 .contact__button {
     display: block;
-    background-color: var(--orange-color);
+    background-color: var(--yellow-color);
     padding: .75rem .5rem;
     margin-top: 1rem;
     margin-left: auto;
@@ -564,25 +589,6 @@ img {
     }
 }
 
-
-@media screen and (max-width: 768px) {
-    .nav__menu {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 80%;
-        height: 100%;
-        padding: 2rem;
-        background-color: rgba(255, 255, 255, .3);
-        transition: .5s;
-        backdrop-filter: blur(50px);
-    }
-
-    .nav__list {
-        padding: 50% 0
-    }
-}
-
 @media screen and (min-width: 768px) {
     body {
         margin: 0;
@@ -626,11 +632,11 @@ img {
     }
 
     .nav__link:hover {
-        color: var(--orange-color);
+        color: var(--yellow-color);
     }
 
     .active::after {
-        background-color: var(--orange-color);
+        background-color: var(--yellow-color);
     }
 
     .home__container {
@@ -640,7 +646,7 @@ img {
     }
 
     .home {
-        background: url(../images/bg-2.png) center no-repeat;
+        background: url(../images/background.png) center no-repeat;
         background-size: cover;
         background-attachment: fixed;
     }
@@ -680,6 +686,10 @@ img {
     .skills__text {
         text-align: center;
         width: 70%;
+    }
+
+    .portfolio {
+        padding-top: 10rem;
     }
 
     .portfolio__container {
