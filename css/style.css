@@ -65,13 +65,10 @@
 }
 
 :root {
-    --dark-blue: #3e4c8b;
-    --light-blue: #b9d2e8;
     --bright-blue: #9efffd;
     --white-color: #fef8f8;
     --grey-color: #b4b2b6;
-    --pink-color: #ffc6bf;
-    --orange-color: #fba397;
+    --red-color: #ed1c24;
     --green-color: #77b0a1;
     --yellow-color: #fcbe37;
     --dark-color: #1e272e;
@@ -413,7 +410,7 @@ img {
     right: -30px;
     top: 30px;
     border: 10px solid var(--yellow-color);
-    opacity: .8;
+    opacity: .7;
     width: 100%;
     height: 100%;
 }
