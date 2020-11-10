@@ -512,6 +512,7 @@ img {
 
 .contact__container {
     row-gap: 2rem;
+    padding-bottom: 10rem;
 }
 
 .contact__subtitle {
