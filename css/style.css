@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+@font-face {
+    font-family: 'OPTIBubbleDoubleBold';
+    src:url('../fonts/OPTIBubbleDoubleBold.ttf.woff') format('woff'),
+        url('../fonts/OPTIBubbleDoubleBold.ttf.svg#OPTIBubbleDoubleBold') format('svg'),
+        url('../fonts/OPTIBubbleDoubleBold.ttf.eot'),
+        url('../fonts/OPTIBubbleDoubleBold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*Shape divider*/
 .custom-shape-divider-bottom-1605027222 {
@@ -76,8 +86,8 @@
 }
 
 :root {
-    --body-font: 'Monstserrat', sans-serif;
-    --accent-font: 'Parisienne', cursive;
+    --body-font: 'Merriweather Sans';
+    --accent-font: 'OPTIBubbleDoubleBold', 'Parisienne', cursive;
     --big-font-size: 6.25rem;
     --medium-font-size: 5.5rem;
     --h2-font-size: 1.25rem;
@@ -145,6 +155,7 @@ img {
 
 .section-title {
     position: relative;
+    font-family: var(--accent-font);
     font-size: var(--h2-font-size);
     color: var(--dark-color);
     margin: var(--mb-4) 0;
@@ -478,6 +489,7 @@ img {
 
 .portfolio__link tag {
     color: var(--yellow-color);
+    font-family: var(--accent-font);
     font-weight: 600;
 }
 
@@ -583,7 +595,9 @@ img {
 }
 
 .footer__title {
+    font-family: var(--accent-font);
     font-size: var(--normal-font-size);
+    letter-spacing: 1.2px;
     color: var(--white-color);
     margin-bottom: var(--mb-2);
 }
@@ -776,7 +790,7 @@ img {
     }
 
     .nav__logo {
-        font-size: var(--h2-font-size);
+        font-size: 1.8rem;
     }
 
     .home__title {
