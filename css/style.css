@@ -291,7 +291,6 @@ img {
 .home__title {
     align-self: flex-end;
     text-align: left;
-    margin: 7rem 5rem;
     font-size: var(--medium-font-size);
     color: var(--dark-color);
     line-height: .8;
