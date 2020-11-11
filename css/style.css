@@ -810,18 +810,18 @@ img {
         width: 70%;
     }
 
+    .portfolio__container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
     .portfolio__link {
         font-size: 12px;
     }
 
     .portfolio__link tag {
         font-size: 15px;
-    }
-
-    .portfolio__container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        column-gap: 2rem;
     }
 
     .gallery__section .gallery__image {
@@ -867,14 +867,7 @@ img {
     .nav__logo {
         font-size: 1.8rem;
     }
-
-    /* .home {
-        background: url(../images/bg-alt.PNG) center no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        height: 100vh;
-    } */
-
+    
     .home__title {
         font-size: 6.5rem;
         margin: initial;
