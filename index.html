@@ -11,70 +11,291 @@
     <body>
 
         <!-- HEADER -->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Julie Paupert</a>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link">Accueil</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">Présentation</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">Compétences</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">Portfolio</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!-- HOME -->
-            <section class="home" id="home">
-                <div class="home__container bd-grid">
-                    <h1 class="home__title">
-                        <span>BIEN</span>
-                        <br>VENUE.
-                    </h1>
-
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-link">
-                            <i class='bx bx-up-arrow-alt'></i>
-                            Scroll down
-                        </a>
-                    </div>
-            </section>
-            <!-- ABOUT -->
-            <section class="about" id="about">
-                <h2 class="section-title">Présentation</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="images/thumbnail_IMG_7996.jpg" alt="profile picture">
-                    </div>
+        <div class="wrapper">
+            <header class="l-header">
+                <nav class="nav bd-grid">
                     <div>
-                        <h2 class="about__subtitle">
-                            Je suis Julie,
-                        </h2>
-                        <span class="about__profession">Développeuse Front-End (mais pas que !)</span>
-                        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis, esse nesciunt nostrum quidem veritatis eligendi, assumenda et sapiente possimus dolorum, magni fuga ex nisi! Iste, laudantium magnam? Rerum, fugiat.</p>
+                        <a href="#" class="nav__logo">Julie Paupert</a>
+                    </div>
 
-                        <div class="about__social">
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#home" class="nav__link">Accueil</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#about" class="nav__link">Présentation</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#skills" class="nav__link">Compétences</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#portfolio" class="nav__link">Portfolio</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#contact" class="nav__link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </nav>
+            </header>
+
+            <main class="l-main">
+                <!-- HOME -->
+                <section class="home" id="home">
+                    <div class="home__container bd-grid">
+                        <h1 class="home__title">
+                            <span>BIEN</span>
+                            <br>VENUE.
+                        </h1>
+
+                        <div class="home__scroll">
+                            <a href="#about" class="home__scroll-link">
+                                <i class='bx bx-up-arrow-alt'></i>
+                                Scroll down
+                            </a>
+                        </div>
+                </section>
+                <!-- ABOUT -->
+                <section class="about" id="about">
+                    <h2 class="section-title">Présentation</h2>
+
+                    <div class="about__container bd-grid">
+                        <div class="about__img">
+                            <img src="images/thumbnail_IMG_7996.jpg" alt="profile picture">
+                        </div>
+                        <div>
+                            <h2 class="about__subtitle">
+                                Je suis Julie,
+                            </h2>
+                            <span class="about__profession">Développeuse Front-End (mais pas que !)</span>
+                            <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis, esse nesciunt nostrum quidem veritatis eligendi, assumenda et sapiente possimus dolorum, magni fuga ex nisi! Iste, laudantium magnam? Rerum, fugiat.</p>
+
+                            <div class="about__social">
+                                <a href="https://www.linkedin.com/in/julie-paupert/" class="about__social-icon" target="_blank">
+                                    <i class='bx bxl-linkedin'></i>
+                                </a>
+                                <a href="https://github.com/julie-p" target="_blank" class="about__social-icon">
+                                    <i class='bx bxl-github' ></i>
+                                </a>
+                                <a href="https://www.instagram.com/zombie_herbivore/" target="_blank" class="about__social-icon">
+                                    <i class='bx bxl-instagram-alt'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-shape-divider-bottom-1605027222">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                        </svg>
+                    </div>
+                </section>
+
+                <!-- SKILLS -->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Mes Compétences</h2>
+                    <p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis, esse nesciunt nostrum quidem veritatis eligendi, assumenda et sapiente possimus dolorum, magni fuga ex nisi! Iste, laudantium magnam? Rerum, fugiat.</p>
+
+                    <div class="skills__container bd-grid">
+                        <div class="skills__box">
+                            <h3 class="skills__subtitle">
+                                Développement
+                            </h3>
+                            <span class="skills__name">HTML</span>
+                            <span class="skills__name">CSS</span>
+                            <span class="skills__name">Bootstrap</span>
+                            <span class="skills__name">WordPress</span>
+                            <span class="skills__name">JavaScript</span>
+                            <span class="skills__name">JQuery</span>
+                            <span class="skills__name">React</span>
+                            <span class="skills__name">React Native</span>
+                            <span class="skills__name">NodeJS</span>
+                            <span class="skills__name">ExpressJS</span>
+                            <span class="skills__name">PHP</span>
+                            <span class="skills__name">Symphony</span>
+                            <span class="skills__name">MYSQL</span>
+                            <span class="skills__name">MongoDB</span>
+                            <span class="skills__name">Firebase</span>
+                            <span class="skills__name">Git/GitHub</span>
+                            <span class="skills__name">Heroku</span>
+                            <span class="skills__name">Netlify</span>
+
+                            <h3 class="skills__subtitle">
+                                Design
+                            </h3>
+                            <span class="skills__name">Figma</span>
+                            <span class="skills__name">Adobe XD</span>
+                            <span class="skills__name">Photoshop</span>
+                        </div>
+
+                        <div class="skills__img">
+                            <img src="images/skills-img.jpg" alt="skills image right">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PORTFOLIO -->
+                <section class="portfolio section" id="portfolio">
+                    <div class="custom-shape-divider-top-1605027459">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                        </svg>
+                    </div>
+                    <div class="inner-width">
+                        <h2 class="section-title">Portfolio</h2>
+
+                        <div class="border"></div>
+                        <div class="portfolio__container bd-grid">
+
+                            <div class="portfolio__img">
+                                <img src="images/portfolio/work-12.jpg" alt="">
+
+                                <div class="portfolio__link">
+                                    <tag>2020</tag>
+                                    <p>Application web développée en React qui propose, via l'API MovieDB, les dernières sorties cinéma et permet de créer sa propre wishlist</p>
+                                    <span>#React, #Redux, #Bootstrap, #CSS, #API, #NodeJS, #MongoDB</span>
+                                    <a href="https://github.com/julie-p/MyMoviz" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+
+                            <div class="portfolio__img">
+                                <img src="images/portfolio/work-1.jpg" alt="">
+
+                                <div class="portfolio__link">
+                                    <tag>2020</tag>
+                                    <p>Un back-office de e-commerce pour suivre les commandes, les messages reçus, analyser l'audience et visualiser les tâches en attente.</p>
+                                    <span>#HTML, #CSS, #JavaScript, #Chart.JS, #NodeJS, #Express, #MongoDB</span>
+                                    <a href="https://github.com/julie-p/BlackBoard" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+
+                            <div class="portfolio__img">
+                                <img src="images/portfolio/work-9.jpg" alt="">
+
+                                <div class="portfolio__link">
+                                    <tag>2020</tag>
+                                    <p>Site personnel, adaptation d'un design de StyleShout et codé en React</p>
+                                    <span>#React, #React-Dom, #JQuery, #Framer-Motion, #CSS, #Animations</span>
+                                    <a href="https://julie-dev.netlify.app/" target="_blank" class="portfolio__link-name"><i class='bx bx-link-external'></i></a>
+                                </div>
+                            </div>
+
+                            <div class="portfolio__img">
+                                <img src="images/portfolio/work-4.jpg" alt="">
+
+                                <div class="portfolio__link">
+                                    <tag>2020</tag>
+                                    <p>Ma version de Pacman en JavaScript et programmation orientée objet. J'ai également ajouté les effets sonores pour l'effet nostalgie !</p>
+                                    <span>#HTML, #CSS, #JavaScript, #Object-Oriented Programming</span>
+                                    <div>
+                                        <a href="https://github.com/julie-p/pacman-js" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
+                                        <a href="https://julie-pacman-game.netlify.app/" target="_blank" class="portfolio__link-name"><i class='bx bx-link-external'></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio__img">
+                                <img src="images/portfolio/work-7.jpg" alt="">
+
+                                <div class="portfolio__link">
+                                    <tag>2020</tag>
+                                    <p>Mon premier portfolio, codé en side-project pendant ma formation et au design inspiré de la synthwave / retrowave</p>
+                                    <span>#HTML, #CSS, #JavaScript, #JQuery, #Responsive, #Animations</span>
+                                    <div>
+                                        <a href="https://github.com/julie-p/portfolio" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
+                                    <a href="https://julie-p.github.io/portfolio/" target="_blank" class="portfolio__link-name"><i class='bx bx-link-external'></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio__img">
+                                <img src="images/portfolio/work-2.jpg" alt="">
+
+                                <div class="portfolio__link">
+                                    <tag>2020</tag>
+                                    <p>Une app d'actualités utilisant News API. Connectez-vous, choisissez votre langue & recevez les infos de France ou des USA & sauvegardez vos articles favoris</p>
+                                    <span>#React, #Redux, #NodeJS, #MongoDB, #API</span>
+                                    <a href="https://github.com/julie-p/MorningNews" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+
+                            <div class="portfolio__img">
+                                <img src="images/portfolio/work-3.jpg" alt="">
+
+                                <div class="portfolio__link">
+                                    <tag>2019</tag>
+                                    <p>Mon tout premier projet en JavaScript et aussi mon tout premier jeu !</p>
+                                    <span>#HTML, #CSS, #JavaScript, #Object-Oriented Programming</span>
+                                    <a href="https://github.com/julie-p/Four-in-a-Row" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+
+                            <div class="portfolio__img">
+                                <img src="images/portfolio/work-10.jpg" alt="">
+
+                                <div class="portfolio__link">
+                                    <tag>2020</tag>
+                                    <p>Portefeuille de crypto-monnaie avec display en tableau & graphique. Choisissez entre dark-mode & light mode et sauvegardez votre préférence.</p>
+                                    <span>#React, #Redux, #Chart.JS, #API, #Firebase</span>
+                                    <a href="https://github.com/julie-p/Crypto-Bot" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+
+                            <div class="portfolio__img">
+                                <img src="images/portfolio/work-13.jpg" alt="">
+
+                                <div class="portfolio__link">
+                                    <tag>2020</tag>
+                                    <p>Nouvelle version de mon site, inspiré du design de Bauhaus & Mondrian. Ce site est entièrement codé en front-end et est responsive.</p>
+                                    <span>#HTML, #CSS, #JavaScript, #ScrollReveal, #Responsive</span>
+                                    <a href="https://github.com/julie-p/personnal-site" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+
+                            <div class="portfolio__img">
+                                <img src="images/portfolio/work-6.jpg" alt="">
+                                
+                                <div class="portfolio__link">
+                                    <tag>2020</tag>
+                                    <p>Une landing page entièrement responsive & moderne pour une agence de voyages</p>
+                                    <span>#HTML, #CSS, #JavaScript, #JQuery, #Animations, #Responsive</span>
+                                    <div>
+                                        <a href="https://github.com/julie-p/travel-agency-landing-page" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
+                                        <a href="https://julie-p.github.io/travel-agency-landing-page/" target="_blank" class="portfolio__link-name"><i class='bx bx-link-external'></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio__img">
+                                <img src="images/portfolio/work-5.jpg" alt="">
+
+                                <div class="portfolio__link">
+                                    <tag>2020</tag>
+                                    <p>Un de mes projets les plus complets, qui me permet de toucher au design, front & back, un E-Commerce MERN Stack de ventes de sneakers. (EN COURS)</p>
+                                    <span>#React, #Redux, #Axios, #Babel, #NodeJS, #MongoDB</span>
+                                    <a href="https://github.com/julie-p/ecommerce-mern-stack" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="custom-shape-divider-bottom-1605027522">
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CONTACT -->
+                <section class="contact section" id="contact">
+                    <h2 class="section-title">Envie de discuter ?</h2>
+
+                    <div class="contact__container bd-grid">
+                        <div class="contact__social">
                             <a href="https://www.linkedin.com/in/julie-paupert/" class="about__social-icon" target="_blank">
                                 <i class='bx bxl-linkedin'></i>
                             </a>
@@ -85,216 +306,42 @@
                                 <i class='bx bxl-instagram-alt'></i>
                             </a>
                         </div>
-                    </div>
-                </div>
-                <div class="custom-shape-divider-bottom-1605027222">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-                    </svg>
-                </div>
-            </section>
+                        <div class="contact__info">
+                            <h3 class="contact__subtitle">EMAIL</h3>
+                            <span class="contact__text">paupertjulie@gmail.com</span>
 
-            <!-- SKILLS -->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Mes Compétences</h2>
-                <p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis, esse nesciunt nostrum quidem veritatis eligendi, assumenda et sapiente possimus dolorum, magni fuga ex nisi! Iste, laudantium magnam? Rerum, fugiat.</p>
+                            <h3 class="contact__subtitle">TELEPHONE</h3>
+                            <span class="contact__text">+33 (0)6.78.54.27.82</span>
 
-                <div class="skills__container bd-grid">
-                    <div class="skills__box">
-                        <h3 class="skills__subtitle">
-                            Développement
-                        </h3>
-                        <span class="skills__name">HTML</span>
-                        <span class="skills__name">CSS</span>
-                        <span class="skills__name">Bootstrap</span>
-                        <span class="skills__name">WordPress</span>
-                        <span class="skills__name">JavaScript</span>
-                        <span class="skills__name">JQuery</span>
-                        <span class="skills__name">React</span>
-                        <span class="skills__name">React Native</span>
-                        <span class="skills__name">NodeJS</span>
-                        <span class="skills__name">ExpressJS</span>
-                        <span class="skills__name">PHP</span>
-                        <span class="skills__name">Symphony</span>
-                        <span class="skills__name">MYSQL</span>
-                        <span class="skills__name">MongoDB</span>
-                        <span class="skills__name">Firebase</span>
-                        <span class="skills__name">Git/GitHub</span>
-                        <span class="skills__name">Heroku</span>
-                        <span class="skills__name">Netlify</span>
+                            <div class="contact__button">
+                                <a href="mailto:paupertjulie@gmail.com" target="_blank" class="email-link">Contact</a>
+                            </div>
 
-                        <h3 class="skills__subtitle">
-                            Design
-                        </h3>
-                        <span class="skills__name">Figma</span>
-                        <span class="skills__name">Adobe XD</span>
-                        <span class="skills__name">Photoshop</span>
+                </section>
+            </main>
+
+            <!-- FOOTER -->
+            <footer class="footer section">
+                <div class="footer__container bd-grid">
+                    <div class="footer__data">
+                        <h2 class="footer__title">JULIE PAUPERT</h2>
+                        <p class="footer__text">paupertjulie@gmail.com</p>
+                        <p class="footer__text">+33 (0)6.78.54.27.82</p>
                     </div>
 
-                    <div class="skills__img">
-                        <img src="images/skills-img.jpg" alt="skills image right">
+                    <div class="footer__data">
+                        <h2 class="footer__title">EXPLORE</h2>
+                        <ul>
+                            <li><a href="#home" class="footer__link">Accueil</a></li>
+                            <li><a href="#about" class="footer__link">À propos</a></li>
+                            <li><a href="#skills" class="footer__link">Compétences</a></li>
+                            <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                            <li><a href="#contact" class="footer__link">Contact</a></li>
+                        </ul>
                     </div>
-                </div>
-            </section>
-
-            <!-- PORTFOLIO -->
-            <section class="portfolio section" id="portfolio">
-                <div class="custom-shape-divider-top-1605027459">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-                    </svg>
-                </div>
-                <div class="inner-width">
-                    <h2 class="section-title">Portfolio</h2>
-
-                    <div class="border"></div>
-                    <div class="portfolio__container bd-grid">
-
-                        <div class="portfolio__img">
-                            <img src="images/portfolio/work-12.jpg" alt="">
-
-                            <div class="portfolio__link">
-                                <tag>2020</tag>
-                                <p>Application web développée en React qui propose, via l'API MovieDB, les dernières sorties cinéma et permet de créer sa propre wishlist</p>
-                                <span>#React, #Redux, #Bootstrap, #CSS, #API, #NodeJS, #MongoDB</span>
-                                <a href="https://github.com/julie-p/MyMoviz" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
-                            </div>
-                        </div>
-
-                        <div class="portfolio__img">
-                            <img src="images/portfolio/work-1.jpg" alt="">
-
-                            <div class="portfolio__link">
-                                <tag>2020</tag>
-                                <p>Un back-office de e-commerce pour suivre les commandes, les messages reçus, analyser l'audience et visualiser les tâches en attente.</p>
-                                <span>#HTML, #CSS, #JavaScript, #Chart.JS, #NodeJS, #Express, #MongoDB</span>
-                                <a href="https://github.com/julie-p/BlackBoard" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
-                            </div>
-                        </div>
-
-                        <div class="portfolio__img">
-                            <img src="images/portfolio/work-9.jpg" alt="">
-
-                            <div class="portfolio__link">
-                                <tag>2020</tag>
-                                <p>Site personnel, adaptation d'un design de StyleShout et codé en React</p>
-                                <span>#React, #React-Dom, #JQuery, #Framer-Motion, #CSS, #Animations</span>
-                                <a href="https://julie-dev.netlify.app/" target="_blank" class="portfolio__link-name"><i class='bx bx-link-external'></i></a>
-                            </div>
-                        </div>
-
-                        <div class="portfolio__img">
-                            <img src="images/portfolio/work-4.jpg" alt="">
-
-                            <div class="portfolio__link">
-                                <tag>2020</tag>
-                                <p>Ma version de Pacman en JavaScript et programmation orientée objet. J'ai également ajouté les effets sonores pour l'effet nostalgie !</p>
-                                <span>#HTML, #CSS, #JavaScript, #Object-Oriented Programming</span>
-                                <div>
-                                    <a href="https://github.com/julie-p/pacman-js" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
-                                    <a href="https://julie-pacman-game.netlify.app/" target="_blank" class="portfolio__link-name"><i class='bx bx-link-external'></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="portfolio__img">
-                            <img src="images/portfolio/work-7.jpg" alt="">
-
-                            <div class="portfolio__link">
-                                <tag>2020</tag>
-                                <p>Mon premier portfolio, codé en side-project pendant ma formation et au design inspiré de la synthwave / retrowave</p>
-                                <span>#HTML, #CSS, #JavaScript, #JQuery, #Responsive, #Animations</span>
-                                <div>
-                                    <a href="https://github.com/julie-p/portfolio" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
-                                <a href="https://julie-p.github.io/portfolio/" target="_blank" class="portfolio__link-name"><i class='bx bx-link-external'></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="portfolio__img">
-                            <img src="images/portfolio/work-2.jpg" alt="">
-
-                            <div class="portfolio__link">
-                                <tag>2020</tag>
-                                <p>Une app d'actualités utilisant News API. Connectez-vous, choisissez votre langue & recevez les infos de France ou des USA & sauvegardez vos articles favoris</p>
-                                <span>#React, #Redux, #NodeJS, #MongoDB, #API</span>
-                                <a href="https://github.com/julie-p/MorningNews" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
-                            </div>
-                        </div>
-
-                        <div class="portfolio__img">
-                            <img src="images/portfolio/work-3.jpg" alt="">
-
-                            <div class="portfolio__link">
-                                <tag>2019</tag>
-                                <p>Mon tout premier projet en JavaScript et aussi mon tout premier jeu !</p>
-                                <span>#HTML, #CSS, #JavaScript, #Object-Oriented Programming</span>
-                                <a href="https://github.com/julie-p/Four-in-a-Row" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
-                            </div>
-                        </div>
-
-                        <div class="portfolio__img">
-                            <img src="images/portfolio/work-10.jpg" alt="">
-
-                            <div class="portfolio__link">
-                                <tag>2020</tag>
-                                <p>Portefeuille de crypto-monnaie avec display en tableau & graphique. Choisissez entre dark-mode & light mode et sauvegardez votre préférence.</p>
-                                <span>#React, #Redux, #Chart.JS, #API, #Firebase</span>
-                                <a href="https://github.com/julie-p/Crypto-Bot" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
-                            </div>
-                        </div>
-
-                        <div class="portfolio__img">
-                            <img src="images/portfolio/work-13.jpg" alt="">
-
-                            <div class="portfolio__link">
-                                <tag>2020</tag>
-                                <p>Nouvelle version de mon site, inspiré du design de Bauhaus & Mondrian. Ce site est entièrement codé en front-end et est responsive.</p>
-                                <span>#HTML, #CSS, #JavaScript, #ScrollReveal, #Responsive</span>
-                                <a href="https://github.com/julie-p/personnal-site" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
-                            </div>
-                        </div>
-
-                        <div class="portfolio__img">
-                            <img src="images/portfolio/work-6.jpg" alt="">
-                            
-                            <div class="portfolio__link">
-                                <tag>2020</tag>
-                                <p>Une landing page entièrement responsive & moderne pour une agence de voyages</p>
-                                <span>#HTML, #CSS, #JavaScript, #JQuery, #Animations, #Responsive</span>
-                                <div>
-                                    <a href="https://github.com/julie-p/travel-agency-landing-page" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
-                                    <a href="https://julie-p.github.io/travel-agency-landing-page/" target="_blank" class="portfolio__link-name"><i class='bx bx-link-external'></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="portfolio__img">
-                            <img src="images/portfolio/work-5.jpg" alt="">
-
-                            <div class="portfolio__link">
-                                <tag>2020</tag>
-                                <p>Un de mes projets les plus complets, qui me permet de toucher au design, front & back, un E-Commerce MERN Stack de ventes de sneakers. (EN COURS)</p>
-                                <span>#React, #Redux, #Axios, #Babel, #NodeJS, #MongoDB</span>
-                                <a href="https://github.com/julie-p/ecommerce-mern-stack" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i></a>
-                            </div>
-                        </div>
                     
-                    </div>
-                    <div class="custom-shape-divider-bottom-1605027522">
-                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-                        </svg>
-                    </div>
-                </div>
-            </section>
-
-            <!-- CONTACT -->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Envie de discuter ?</h2>
-
-                <div class="contact__container bd-grid">
-                    <div class="contact__social">
+                    <div class="footer__data">
+                        <h2 class="footer__title">FOLLOW</h2>
                         <a href="https://www.linkedin.com/in/julie-paupert/" class="about__social-icon" target="_blank">
                             <i class='bx bxl-linkedin'></i>
                         </a>
@@ -304,61 +351,16 @@
                         <a href="https://www.instagram.com/zombie_herbivore/" target="_blank" class="about__social-icon">
                             <i class='bx bxl-instagram-alt'></i>
                         </a>
+                        <br>
+                        <br>
+                        <span>© 2020 Julie Paupert - Tous droits réservés</span>
                     </div>
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">EMAIL</h3>
-                        <span class="contact__text">paupertjulie@gmail.com</span>
 
-                        <h3 class="contact__subtitle">TELEPHONE</h3>
-                        <span class="contact__text">+33 (0)6.78.54.27.82</span>
 
-                        <div class="contact__button">
-                            <a href="mailto:paupertjulie@gmail.com" target="_blank" class="email-link">Contact</a>
-                        </div>
-
-            </section>
-        </main>
-
-        <!-- FOOTER -->
-        <footer class="footer section">
-            <div class="footer__container bd-grid">
-                <div class="footer__data">
-                    <h2 class="footer__title">JULIE PAUPERT</h2>
-                    <p class="footer__text">paupertjulie@gmail.com</p>
-                    <p class="footer__text">+33 (0)6.78.54.27.82</p>
                 </div>
+            </footer>
 
-                <div class="footer__data">
-                    <h2 class="footer__title">EXPLORE</h2>
-                    <ul>
-                        <li><a href="#home" class="footer__link">Accueil</a></li>
-                        <li><a href="#about" class="footer__link">À propos</a></li>
-                        <li><a href="#skills" class="footer__link">Compétences</a></li>
-                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
-                        <li><a href="#contact" class="footer__link">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__data">
-                    <h2 class="footer__title">FOLLOW</h2>
-                    <a href="https://www.linkedin.com/in/julie-paupert/" class="about__social-icon" target="_blank">
-                        <i class='bx bxl-linkedin'></i>
-                    </a>
-                    <a href="https://github.com/julie-p" target="_blank" class="about__social-icon">
-                        <i class='bx bxl-github' ></i>
-                    </a>
-                    <a href="https://www.instagram.com/zombie_herbivore/" target="_blank" class="about__social-icon">
-                        <i class='bx bxl-instagram-alt'></i>
-                    </a>
-                    <br>
-                    <br>
-                    <span>© 2020 Julie Paupert - Tous droits réservés</span>
-                </div>
-
-
-            </div>
-        </footer>
-
+        </div>
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="./js/script.js"></script>
     </body>
