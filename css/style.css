@@ -173,13 +173,33 @@ img {
 
 .l-header {
     width: 100%;
-    /* position: fixed; */
     top: 0;
     left: 0;
     z-index: 1;
     background-color: transparent;
     position: absolute;
     color: #fff;
+}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover::before {
+    height: 180%;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .8s;
+    border-radius: 50% 50% 0 0;
 }
 
 /* ----------------------------NAV---------------------------------- */
@@ -369,6 +389,11 @@ img {
     margin: auto;
 }
 
+.about__text span {
+    /* color: var(--dark-color); */
+    font-weight: 600;
+}
+
 .about__profession {
     display: block;
     margin-bottom: var(--mb-4);
@@ -421,30 +446,23 @@ img {
     padding: .25rem .5rem;
     color: var(--dark-color);
     border-radius: .25rem;
-    position: relative;
-    overflow: hidden;
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+                -2px -2px 12px rgba(255, 255, 255, .5),
+                inset 2px 2px 4px rgba(255, 255, 255, .1),
+                2px 2px 8px rgba(0, 0, 0, .15);
 }
 
 .skills__name::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 0%;
     background-color: var(--dark-color);
     opacity: .9;
-    z-index: -1;
-    transition: .8s;
-    border-radius: 50% 50% 0 0;
-}
-
-.skills__name:hover::before {
-    height: 180%;
 }
 
 .skills__name:hover {
     color: var(--white-color);
+    box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+                inset -2px -2px 12px rgba(255, 255, 255, .5),
+                inset 2px 2px 4px rgba(255, 255, 255, .1),
+                inset 2px 2px 8px rgba(0, 0, 0, .15);
 }
 
 .skills__img {
@@ -514,6 +532,10 @@ img {
     font-size: 12px;
 }
 
+.portfolio__link p {
+    color: var(--white-color);
+}
+
 .portfolio__link p, .portfolio__link span {
     width: 80%;
     text-align: center;
@@ -521,7 +543,8 @@ img {
 }
 
 .portfolio__link span {
-    margin-top: .5rem;
+    margin-top: .2rem;
+    font-size: 10px;
 }
 
 .portfolio__link div {
@@ -535,13 +558,41 @@ img {
     letter-spacing: 1.5px;
 }
 
+.portfolio__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 12px;
+    margin-top: .5rem;
+    background-color: transparent;
+    border-radius: .5rem;
+    box-shadow: -2px -2px 8px rgb(156, 156, 156),
+                -2px -2px 12px rgba(255, 255, 255, .5),
+                inset 2px 2px 4px rgba(255, 255, 255, .1),
+                2px 2px 8px rgba(0, 0, 0, .15);
+}
+
+.portfolio__button:first-child {
+    margin-right: 1rem;
+}
+
+.portfolio__button::before {
+    background-color: var(--bright-blue);
+}
+
+.portfolio__button:hover a {
+    color: var(--dark-color);
+}
+
 .portfolio__img:hover .portfolio__link {
     bottom: 0;
 }
 
 .portfolio__link-name {
-    margin-top: .3rem;
     color: var(--dark-color);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 .portfolio__link-name:hover {
@@ -549,8 +600,8 @@ img {
 }
 
 .portfolio__link-name i {
-    font-size: 1.8rem;
-    margin: .2rem;
+    font-size: 1rem;
+    margin-right: .2rem;
 }
 
 /* -------------------- CONTACT --------------------------*/
@@ -603,13 +654,14 @@ img {
     border-radius: .5rem;
     outline: none;
     font-size: var(--normal-font-size);
-    color: var(--yellow-color);
-    background: transparent;
+    color: var(--white-color);
+    background: var(--yellow-color);
     cursor: pointer;
     text-align: center;
     text-transform: uppercase;
-    position: relative;
-    overflow: hidden;
+}
+
+.contact__button:hover {
     box-shadow: -2px -2px 12px rgba(255, 255, 255, 1),
                 -2px -2px 12px rgba(255, 255, 255, .5),
                 inset 2px 5px 4px rgba(255, 255, 255, .5),
@@ -617,27 +669,14 @@ img {
 }
 
 .contact__button::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 0%;
-    background-color: var(--yellow-color);
-    z-index: -1;
-    transition: .8s;
-    border-radius: 0 0 50% 50%;
-}
-
-.contact__button:hover::before {
-    height: 180%;
-}
-
-.contact__button:hover a {
-    color: var(--white-color);
+    background-color: var(--white-color);
 }
 
 .contact__button a {
+    color: var(--white-color);
+}
+
+.contact__button:hover a {
     color: var(--yellow-color);
 }
 
@@ -822,6 +861,14 @@ img {
 
     .portfolio__link tag {
         font-size: 15px;
+    }
+
+    .portfolio__link span {
+        margin-top: 1rem;
+    }
+
+    .portfolio__button {
+        margin-top: 1rem;
     }
 
     .gallery__section .gallery__image {
