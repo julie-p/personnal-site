@@ -497,7 +497,7 @@ img {
     border-radius: .5rem;
     cursor: pointer;
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(50px);
     transition: .3s;
     font-size: 12px;
 }
