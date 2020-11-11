@@ -318,9 +318,7 @@ img {
 
 /*-------------------- ABOUT ---------------- */
 .about {
-    /* background-color: var(--dark-color); */
     position: relative;
-    padding: 2rem 0 4rem 0;
 }
 
 .about .section-title {
@@ -393,7 +391,6 @@ img {
 /* -------------------- SKILLS -------------------- */
 .skills {
     background-color: var(--beige-color);
-    padding: 2rem 0 6rem 0;
 }
 
 .skills__container {
@@ -700,9 +697,6 @@ img {
     body {
         margin: 0;
     } 
-    .section {
-        padding-top: 4rem;
-    }
 
     .section-title {
         margin-bottom: 3rem;
@@ -809,6 +803,7 @@ img {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         text-align: left;
+        padding-bottom: 6rem;
     }
 
     .skills__text {
