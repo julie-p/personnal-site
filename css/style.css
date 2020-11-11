@@ -627,7 +627,7 @@ img {
 }
 
 .portfolio__button a {
-    color: var(--dark-color);
+    color: var(--white-color);
 }
 
 .portfolio__button:hover a {
