@@ -566,6 +566,7 @@ img {
     justify-content: center;
     padding: 5px 12px;
     margin-top: .5rem;
+    color: var(--white-color);
     background-color: transparent;
     position: relative;
     transition: .5s;
@@ -575,10 +576,6 @@ img {
 
 .portfolio__button:first-child {
     margin-right: 1rem;
-}
-
-.portfolio__button:nth-child(2) {
-    filter: hue-rotate(115deg);
 }
 
 .portfolio__button::before {
@@ -625,9 +622,18 @@ img {
     transition-delay: .2s;
 }
 
+.demo {
+    filter: hue-rotate(115deg);
+}
+
+.portfolio__button a {
+    color: var(--dark-color);
+}
+
 .portfolio__button:hover a {
     color: var(--white-color);
     transition-delay: .2s;
+    z-index: 1;
 }
 
 .portfolio__img:hover .portfolio__link {
@@ -918,7 +924,7 @@ img {
     }
 
     .portfolio__button {
-        margin-top: 1rem;
+        margin-top: .5rem;
     }
 
     .gallery__section .gallery__image {
