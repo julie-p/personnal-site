@@ -365,7 +365,6 @@ img {
 
 .about__text {
     margin-bottom: var(--mb-4);
-    color: var(--dark-color);
     width: 80%;
     margin: auto;
 }
