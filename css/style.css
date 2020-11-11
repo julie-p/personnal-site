@@ -130,9 +130,16 @@ body {
 
 .spinner {
     position: relative;
-    width: 8rem;
-    height: 8rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
+}
+
+.spinner:nth-child(2) {
+    width: 6rem;
+    height: 6rem;
+    margin: auto 3rem;
+    filter: hue-rotate(115deg);
 }
 
 .spinner::before,
@@ -145,7 +152,7 @@ body {
 .spinner::before {
     width: 100%;
     height: 100%;
-    background-image:linear-gradient(90deg, var(--pink-color) 0%, var(--yellow-color) 100%);
+    background-image:linear-gradient(90deg, var(--yellow-color) 0%, var(--bright-blue) 100%);
     animation: spin .5s infinite linear;
 }
 
