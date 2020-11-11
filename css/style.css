@@ -496,7 +496,7 @@ img {
     background-color: rgba(255,255,255,.3);
     border-radius: .5rem;
     cursor: pointer;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(70px);
     -webkit-backdrop-filter: blur(70px);
     transition: .3s;
     font-size: 12px;
