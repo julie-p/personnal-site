@@ -508,6 +508,10 @@ img {
     color: var(--dark-color);
 }
 
+.portfolio__link span {
+    margin-top: .5rem;
+}
+
 .portfolio__link div {
     display: flex;
 }
@@ -795,11 +799,11 @@ img {
     }
 
     .portfolio__link {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .portfolio__link tag {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .portfolio__container {
