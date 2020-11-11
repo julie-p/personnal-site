@@ -1,3 +1,10 @@
+/* Loader */
+let spinnerWrapper = document.querySelector('.spinner-wrapper');
+
+window.addEventListener('load', function() {
+    spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+});
+
 /* Show menu */
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
