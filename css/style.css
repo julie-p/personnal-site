@@ -597,9 +597,9 @@ img {
 
 .contact__button {
     display: block;
+    width: 40%;
     padding: .75rem .5rem;
-    margin-top: 2rem;
-    margin-left: auto;
+    margin: 2rem auto;
     border-radius: .5rem;
     outline: none;
     font-size: var(--normal-font-size);
