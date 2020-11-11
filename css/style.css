@@ -158,6 +158,12 @@ body {
     transform: translate(-50%, -50%);
 }
 
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .wrapper {
     overflow-x: hidden;
 }
