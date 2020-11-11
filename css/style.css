@@ -222,6 +222,7 @@ img {
         background-color: rgba(255, 255, 255, .3);
         transition: .5s;
         backdrop-filter: blur(50px);
+        -webkit-appearance: none;
     }
 
     .nav__list {
@@ -496,6 +497,7 @@ img {
     border-radius: .5rem;
     cursor: pointer;
     backdrop-filter: blur(10px);
+    -webkit-appearance: none;
     transition: .3s;
     font-size: 12px;
 }
