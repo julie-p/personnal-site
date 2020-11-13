@@ -587,7 +587,6 @@ img {
     align-items: center;
     background-color: #444;
     opacity: .9;
-    border-radius: .5rem;
     cursor: pointer;
     transition: .3s;
     font-size: 12px;
