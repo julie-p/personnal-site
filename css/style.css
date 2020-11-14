@@ -793,6 +793,10 @@ img {
 
 /* -------------------- MEDIA QUERIES --------------------------*/
 @media screen and (max-width: 480px) {
+    .nav__menu {
+        position: fixed;
+    }
+    
     .gallery__section .gallery__image {
         flex: 100%;
     }
