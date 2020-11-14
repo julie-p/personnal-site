@@ -431,8 +431,8 @@ img {
     align-self: flex-end;
     text-align: left;
     padding-bottom: 2rem;  
-    /* margin-top: -20rem; */
     z-index: 1000; 
+    animation: move-up 2s infinite alternate;
 }
 
 .home__scroll-link i {
@@ -799,28 +799,25 @@ img {
     border-radius: .5rem;
     outline: none;
     font-size: var(--normal-font-size);
-    background: var(--white-color);
+    background-color: var(--yellow-color);
+    animation: color-shift 5s infinite alternate;
     cursor: pointer;
     text-align: center;
     text-transform: uppercase;
-    box-shadow: inset -2px -2px 12px rgba(255, 255, 255, 1),
-                -2px -2px 12px rgba(255, 255, 255, .5),
-                inset 2px 5px 4px rgba(255, 255, 255, .5),
-                2px 5px 8px rgba(0, 0, 0, .15);
     transition: .2s;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .contact__button:hover {
     box-shadow: none;
-    background-color: var(--yellow-color);
-    animation: color-shift 5s infinite alternate;
+    background-color: var(--white-color);
 }
 .contact__button a {
-    color: var(--dark-color);
+    color: var(--white-color);
 }
 
 .contact__button:hover a {
-    color: var(--white-color);
+    color: var(--yellow-color);
 }
 
 /* -------------------- FOOTER --------------------------*/
