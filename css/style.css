@@ -272,8 +272,13 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+    .nav {
+        position: -webkit-sticky;
+        top: 0;
+    }
     .nav__menu {
         position: fixed;
+        position: -webkit-fixed;
         top: 0;
         right: -100%;
         width: 80%;
@@ -793,10 +798,6 @@ img {
 
 /* -------------------- MEDIA QUERIES --------------------------*/
 @media screen and (max-width: 480px) {
-    .nav__menu {
-        position: fixed;
-    }
-
     .gallery__section .gallery__image {
         flex: 100%;
     }
