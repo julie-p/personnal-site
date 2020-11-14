@@ -272,13 +272,8 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-    .nav {
-        position: -webkit-sticky;
-        top: 0;
-    }
     .nav__menu {
         position: fixed;
-        position: -webkit-fixed;
         top: 0;
         right: -100%;
         width: 80%;
