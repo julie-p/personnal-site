@@ -472,8 +472,8 @@ img {
     display: flex;
     justify-content: center;
     position: relative;
-    width: 150px;
-    height: 140px;
+    width: 135px;
+    height: 125px;
     overflow: hidden;
 }
 
@@ -486,7 +486,7 @@ img {
     height: 100%;
     z-index: 1;
     opacity: 0.5;
-    background-image: linear-gradient(to bottom right, #3B4679, #2B3153);
+    background-image: linear-gradient(to bottom right,  rgb(229, 164, 209, .4), #3B4679);
     border-radius: 50%;
     overflow: hidden;
 }
@@ -932,7 +932,7 @@ img {
     .home {
         background: url(../images/liq-1.png) center no-repeat;
         background-size: cover;
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
         height: 100vh;
     }
 
@@ -978,7 +978,7 @@ img {
     }
 
     .about__img {
-        width: 350px;
+        width: 340px;
         height: 300px;
     }
 

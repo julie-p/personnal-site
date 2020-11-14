@@ -60,8 +60,7 @@ const sr = ScrollReveal({
 
 /* Scroll Home */
 sr.reveal('.nav__menu', {delay: 100})
-sr.reveal('.home__title', {origin:'bottom', delay: 200});
-/* sr.reveal('.home__scroll', {delay: 200}); */
+sr.reveal('.home__title', {origin:'bottom', delay: 200})
 sr.reveal('.home__img', {origin:'right', delay: 400});
 
 /* Scroll About */
