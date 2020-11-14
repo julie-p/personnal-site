@@ -59,15 +59,17 @@ const sr = ScrollReveal({
 });
 
 /* Scroll Home */
-sr.reveal('.home__title', {});
-sr.reveal('.home__scroll', {delay: 200});
+sr.reveal('.nav__menu', {delay: 100})
+sr.reveal('.home__title', {origin:'bottom', delay: 200});
+/* sr.reveal('.home__scroll', {delay: 200}); */
 sr.reveal('.home__img', {origin:'right', delay: 400});
 
 /* Scroll About */
 sr.reveal('.about__img', {origin:'left', delay: 500});
 sr.reveal('.about__subtitle', {origin:'right', delay: 300});
 sr.reveal('.about__profession', {origin:'right', delay: 400});
-sr.reveal('.about__text', {origin:'right', delay: 500});
+sr.reveal('.left', {origin:'left', delay: 500});
+sr.reveal('.right', {origin:'right', delay: 500});
 sr.reveal('.about__social-icon', {origin:'right', delay: 600, interval: 200});
 
 /* Scroll Skills */

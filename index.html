@@ -9,7 +9,6 @@
         <meta property="og:type" content="website">
         <meta name="image" property="og:image" content="images/portfolio/work-13.jpg">
         <meta property="og-url" content="http://julie-developer.com/">
-        <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>        
         <link rel="stylesheet" href="./css/style.css">
     </head>
@@ -18,7 +17,7 @@
 
             <!-- Loader -->
             <div class="spinner-wrapper">
-                <div class="spinner">Loading ...</div>
+                <div class="spinner"></div>
             </div>
 
             <!-- HEADER -->
@@ -56,23 +55,33 @@
                             <i class='bx bx-menu'></i>
                         </div>
                     </nav>
+
                 </header>
 
                 <main class="l-main">
                     <!-- HOME -->
-                    <section class="home" id="home">
+                    <section class="home color-shift" id="home">
                         <div class="home__container bd-grid">
                             <h1 class="home__title">
-                                <span>BIEN</span>
-                                <br>VENUE<span class="dot">.</span>
+                                Je
+                                <br>
+                                Suis
+                                <br>
+                                Développeuse
+                                <br>
+                                <div class="word">
+                                    <span>front-end.</span>
+                                    <span>back-end.</span>
+                                    <span>fullstack.</span>
+                                </div>
                             </h1>
 
                             <div class="home__scroll">
                                 <a href="#about" class="home__scroll-link">
                                     <i class='bx bx-up-arrow-alt'></i>
-                                    Scroll
                                 </a>
                             </div>
+                        </div>
                     </section>
                     <!-- ABOUT -->
                     <section class="about section" id="about">
@@ -80,20 +89,23 @@
 
                         <div class="about__container bd-grid">
                             <div class="about__img">
-                                <img src="images/thumbnail_IMG_7996.jpg" alt="profile_picture_julie">
+                                <img src="images/skills-img-2.jpg" alt="profile_picture_julie">
                             </div>
                             <div>
                                 <h2 class="about__subtitle">
                                     Je suis Julie,
                                 </h2>
                                 <span class="about__profession">Développeuse Fullstack (mais pas que !)</span>
-                                <p class="about__text">
+                                <p class="about__text main">
+                                    <div class="about__text left"></div>
                                     Passionnée d'Art et de design depuis toujours, j'ai étudié la restauration d'Art et ai fait un petit détour par l'animation 2D avant de découvrir le  développement web.
                                     <br><br>
+                                    <div class="about__text right">
                                     Polyvalente et autonome, j'aime avant tout créer des sites accessibles, modernes et colorés, avec toujours l'utilisateur au coeur de ma réflexion.
-                                    <br><br>
+                                    </div><br>
+                                    <div class="about__text left">
                                     Quand je ne code pas, je passe beaucoup de temps à lire de la fantasy, à faire de la veille technologique, à pâtisser et à jouer aux jeux-vidéo. Je suis aussi très investie dans la protection animale et l'écologie, et m'intéresse beaucoup à la GreenTech et à l'histoire des femmes dans la STEM.
-                                    <br><br>
+                                    </div><br><br>
                                     <span>
                                         Je cherche aujourd'hui à mettre mes compétences au service d'une entreprise porteuse d'un projet innovant, favorisant l'entraide et la cohésion d'équipe.
                                     </span>
@@ -131,7 +143,15 @@
                         <div class="skills__container bd-grid">
                             <div class="skills__box">
                                 <h3 class="skills__subtitle">
-                                    Développement
+                                    Design
+                                </h3>
+                                <span class="skills__name btn">Figma</span>
+                                <span class="skills__name btn">Adobe XD</span>
+                            </div>
+
+                            <div class="skills__box">
+                                <h3 class="skills__subtitle">
+                                    Front-End
                                 </h3>
                                 <span class="skills__name btn">HTML</span>
                                 <span class="skills__name btn">CSS</span>
@@ -141,6 +161,12 @@
                                 <span class="skills__name btn">JQuery</span>
                                 <span class="skills__name btn">React</span>
                                 <span class="skills__name btn">React Native</span>
+                            </div>
+
+                            <div class="skills__box">
+                                <h3 class="skills__subtitle">
+                                    Back-End
+                                </h3> 
                                 <span class="skills__name btn">NodeJS</span>
                                 <span class="skills__name btn">Express</span>
                                 <span class="skills__name btn">PHP</span>
@@ -148,31 +174,21 @@
                                 <span class="skills__name btn">MySQL</span>
                                 <span class="skills__name btn">MongoDB</span>
                                 <span class="skills__name btn">Firebase</span>
+                            </div>
+
+                            <div class="skills__box">
+                                <h3 class="skills__subtitle">Workflow</h3>
                                 <span class="skills__name btn">Git/GitHub</span>
                                 <span class="skills__name btn">Heroku</span>
                                 <span class="skills__name btn">Netlify</span>
-
-                                <h3 class="skills__subtitle">
-                                    Design
-                                </h3>
-                                <span class="skills__name btn">Figma</span>
-                                <span class="skills__name btn">Adobe XD</span>
-                                <span class="skills__name btn">Photoshop</span>
-                            </div>
-
-                            <div class="skills__img">
-                                <img src="images/skills-img.jpg" alt="skills_image_right">
                             </div>
                         </div>
+
                     </section>
 
                     <!-- PORTFOLIO -->
                     <section class="portfolio section" id="portfolio">
-                        <div class="custom-shape-divider-top-1605107946">
-                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                            </svg>
-                        </div>
+
                         <div class="inner-width">
                             <h2 class="section-title">Portfolio</h2>
 
@@ -298,7 +314,7 @@
 
                                     <div class="portfolio__link">
                                         <tag>2020</tag>
-                                        <p>Nouvelle version de mon site, inspiré du style Bauhaus et Mondrian. Ce site est entièrement codé en front-end et en mobile-first responsive.</p>
+                                        <p>Nouvelle version de mon site entièrement codé en front-end et en mobile-first responsive.</p>
                                         <span>#HTML, #CSS, #JavaScript, #ScrollReveal, #Responsive</span>
                                         <div class="portfolio__button">
                                             <a href="https://github.com/julie-p/personnal-site" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i>Voir le code</a>
@@ -335,11 +351,6 @@
                                             <a href="https://github.com/julie-p/ecommerce-mern-stack" target="_blank" class="portfolio__link-name"><i class='bx bxl-github'></i>Voir le code</a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="custom-shape-divider-bottom-1605108444">
-                                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                                    </svg>
                                 </div>
                             </div>
                         </div>
