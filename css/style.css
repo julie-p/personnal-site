@@ -41,26 +41,32 @@
     }
 }
 
-@keyframes animate {
+@keyframes rotate-text-up { 
+    0% {
+      transform: translate3d(0, 80px, 0);
+      opacity: 0;
+    }
+    
+    20%, 80% {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+    
+    100% {
+      transform: translate3d(0, -40px, 0);
+      opacity: 0;
+    }
+}
+  
+@keyframes fade-text-in { 
     0% {
         opacity: 0;
-        transform: translateY(-50px);
+        transform: translate3d(0, 80px, 0);
     }
-    5% {
+
+    50%, 100% {
         opacity: 1;
-        transform: translateY(0px);
-    }
-    18% {
-        opacity: 1;
-        transoform: translateY(0px);
-    }
-    20% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(50px);
+        transform: translate3d(0, 0, 0);
     }
 }
 
@@ -73,6 +79,12 @@
     }
     100%{
         box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
     }
 }
 
@@ -153,7 +165,7 @@ body::before {
 /* Loader */
 .spinner-wrapper {
     width: 100%;
-    height: 100%;
+    height: 90vh;
     background-image: linear-gradient(to bottom right, #3B4679, #2B3153);
     position: absolute;
     top: 0;
@@ -192,12 +204,6 @@ body::before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
 }
 
 .wrapper {
@@ -245,7 +251,6 @@ img {
     top: 2rem;
     background-color: var(--pink-color);
     animation: color-shift 5s infinite alternate;
-
 }
 
 .bd-grid {
@@ -323,7 +328,7 @@ img {
 .nav__item {
     margin-bottom: var(--mb-4);
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 12.5px;
 }
 
 .nav__link {
@@ -377,12 +382,12 @@ img {
 /* -------------------- HOME --------------------------*/
 .home {
     width: 100%;
-    background: url('../images/liq-1.png') center no-repeat;
-    background-size: cover;
     display: flex;
     align-items: center;
     text-align: center;
     position: relative;
+    background: url('../images/liq-1.png') center no-repeat;
+    background-size: cover;
 }
 
 .home__container {
@@ -391,44 +396,39 @@ img {
 }
 
 .home__title {
-    align-self: flex-end;
+    align-self: center;
     text-align: left;
-    font-size: 2rem;
+    font-size: 2.6rem;
     color: var(--dark-color);
     line-height: .8;
     text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
     text-transform: uppercase;
+    margin-top: 7rem;
 }
 
 .home__title span {
+    color: var(--white-color);
+}
+
+.word { 
+    opacity: 0;
+    position: absolute;
+    text-transform: uppercase;
     text-shadow: 0 20px 25px rgba(165, 165, 165, 0.788);
     color: var(--white-color);
 }
 
-.word {
-    display: inline-block;
+.word:nth-of-type(1) { 
+    animation: rotate-text-up 1.5s .75s; 
 }
 
-.word span {
-    position: absolute;
-    top: 80px;
-    overflow: hidden;
-    animation: animate 8s linear infinite;
-    opacity: 0;
-}
+.word:nth-of-type(2) { 
+    animation: rotate-text-up 1.5s 2s; 
+}  
 
-.word span:nth-child(1) {
-    animation-delay: 0s;
+.word:nth-of-type(3) { 
+    animation: fade-text-in 1.5s 3.25s forwards;
 }
-
-.word span:nth-child(2) {
-    animation-delay: 2s;
-}
-
-.word span:nth-child(3) {
-    animation-delay: 4s;
-}
-
 
 .home__title .dot {
     color: var(--pink-color);
@@ -436,11 +436,10 @@ img {
 }
 
 .home__scroll {
-    align-self: flex-end;
+    align-self: center;
     text-align: left;
-    padding-bottom: 2rem;  
-    z-index: 1000; 
-    animation: move-up 2s infinite alternate;
+    margin-top: 1rem; 
+    animation: move-down 2s infinite alternate;
 }
 
 .home__scroll-link i {
@@ -472,8 +471,8 @@ img {
     display: flex;
     justify-content: center;
     position: relative;
-    width: 135px;
-    height: 125px;
+    width: 100px;
+    height: 110px;
     overflow: hidden;
 }
 
@@ -600,30 +599,6 @@ img {
                 inset 2px 2px 4px rgba(255, 255, 255, .1),
                 inset 2px 2px 8px rgba(0, 0, 0, .15);
 }
-
-.skills__img {
-    flex: 1;
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.skills__img::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.5;
-    background-image: linear-gradient(to bottom right, #3B4679, var(--white-color));
-}
-
-.skills__img img {
-    border-radius: .5rem;
-}
-
 /* -------------------- PORTFOLIO --------------------------*/
 .portfolio {
     position: relative;
@@ -685,6 +660,7 @@ img {
 .portfolio__link tag {
     background-color: #a971ff;
     background-image: linear-gradient(90deg, #a971ff 0%, #ff8eff 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: var(--accent-font);
@@ -808,6 +784,7 @@ img {
     outline: none;
     font-size: var(--normal-font-size);
     background-color: var(--pink-color);
+    color: var(--white-color);
     animation: color-shift 5s infinite alternate;
     cursor: pointer;
     text-align: center;
@@ -816,10 +793,16 @@ img {
     box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
 }
 
+.contact__button::before {
+    background-color: var(--white-color);
+    opacity: .9;
+    animation: color-shift 5s infinite alternate;
+}
+
 .contact__button:hover {
     box-shadow: none;
-    background-color: var(--white-color);
 }
+
 .contact__button a {
     color: var(--white-color);
 }
@@ -874,16 +857,26 @@ img {
 }
 
 /* -------------------- MEDIA QUERIES --------------------------*/
+@media screen and (max-width: 376px) {
+    .home__title {
+        font-size: 2rem;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .gallery__section .gallery__image {
         flex: 100%;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     body {
         margin: 0;
     } 
+
+    .spinner-wrapper {
+        height: 100vh;
+    }
 
     .section-title {
         margin-bottom: 3rem;
@@ -930,31 +923,15 @@ img {
     }
 
     .home {
-        background: url(../images/liq-1.png) center no-repeat;
-        background-size: cover;
         background-attachment: fixed;
-        height: 100vh;
-    }
-
-    .home__container {
-        height: 100vh;
     }
 
     .home__title {
         font-size: 4.5rem;
     }
 
-    .word span {
-        top: 200px;
-    }
-
-    .home__img {
-        width: 524px;
-        right: 10%;
-    }
-
     .home__scroll-link i {
-        margin-top: 2rem;
+        margin-top: 5rem;
         font-size: 3.5rem;
     }
 
@@ -978,7 +955,7 @@ img {
     }
 
     .about__img {
-        width: 340px;
+        width: 260px;
         height: 300px;
     }
 
@@ -995,6 +972,7 @@ img {
         text-align: left;
         padding-bottom: 4rem;
         margin: auto;
+        width: 90%;
     }
 
     .skills__text {
@@ -1051,7 +1029,7 @@ img {
     }
 
     .footer__data span {
-        line-height: 9;
+        line-height: 11;
     }
 }
 
@@ -1074,11 +1052,6 @@ img {
     .home__title {
         font-size: 6.5rem;
         line-height: .8;
-        margin-top: 10rem;
-    }
-
-    .word span {
-        top: 200px;
     }
 
     .home__scroll {

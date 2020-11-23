@@ -6,18 +6,18 @@ window.addEventListener('load', function() {
 });
 
 /* Show menu */
-const showMenu = (toggleId, navId) => {
+const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId);
+    nav = document.getElementById(navId)
 
-    if (toggle && nav) {
-        toggle.addEventListener('click', () => {
-            nav.classList.toggle('show');
+    if(toggle && nav){
+        toggle.addEventListener('click', ()=>{
+            nav.classList.toggle('show')
         })
     };
 };
 
-showMenu('nav-toggle', 'nav-menu');
+showMenu('nav-toggle','nav-menu');
 
 /* Remove menu mobile */
 const navLink = document.querySelectorAll('.nav__link');
@@ -55,11 +55,10 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
     duration: 2000,
-    reset: true
+    reset: false
 });
 
 /* Scroll Home */
-sr.reveal('.nav__menu', {delay: 100})
 sr.reveal('.home__title', {origin:'bottom', delay: 200})
 sr.reveal('.home__img', {origin:'right', delay: 400});
 
