@@ -441,7 +441,7 @@ img {
 }
 
 .home__scroll-link i {
-    font-size: 4rem;
+    font-size: 2rem;
     margin-top: -30rem;
     transform: rotate(180deg);
 }
@@ -949,7 +949,6 @@ img {
 
     .home__scroll-link i {
         margin-top: 5rem;
-        font-size: 3.5rem;
     }
 
     .about .section {
@@ -1081,13 +1080,12 @@ img {
 
     .home__scroll-link {
         writing-mode: vertical-lr;
-        font-size: 1rem;
         color: var(--white-color);
         letter-spacing: -1;
     }
 
     .home__scroll-link i {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .inner-width {
