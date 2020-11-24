@@ -438,11 +438,10 @@ img {
     align-self: center;
     text-align: left;
     margin-top: 1rem; 
-    animation: move-down 2s infinite alternate;
 }
 
 .home__scroll-link i {
-    font-size: 2rem;
+    font-size: 4rem;
     margin-top: -30rem;
     transform: rotate(180deg);
 }

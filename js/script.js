@@ -71,7 +71,7 @@ contactBtn.forEach(btn => {
 /* Loader */
 let spinnerWrapper = document.querySelector('.spinner-wrapper');
 
-window.addEventListener('load', function() {
+window.addEventListener('DOMContentLoaded', function() {
     spinnerWrapper.parentElement.removeChild(spinnerWrapper);
 });
 
