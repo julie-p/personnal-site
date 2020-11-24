@@ -815,6 +815,7 @@ img {
     background-color: var(--dark-color);
     position: relative;
     text-align: center;
+    cursor: default;
 }
 
 .footer__container {
