@@ -146,6 +146,7 @@ body {
     z-index: 1;
     width: 100%;
     min-height: 100vh;
+    cursor: none;
 }
 
 body::before {
@@ -159,7 +160,44 @@ body::before {
     background: url("../images/bg-pat.png");
     background-size: cover;
     opacity: .2;
-    z-index: -1;
+}
+
+/* Cursor */
+.cursor {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all .2s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+}
+
+.link-grow {
+    transform: scale(2);
+    background: #fff;
+    opacity: .2;
+}
+
+.link-index {
+    z-index: 9999;
+}
+
+.img-index {
+    z-index: 9999;
+    transform: scale(1.5);
+    background: #fff;
+    opacity: .2;
+}
+
+.btn-bg {
+    z-index: 9999;
+    transform: scale(2);
+    background: var(--pink-color);
+    opacity: .4;
 }
 
 /* Loader */
@@ -637,7 +675,6 @@ img {
     align-items: center;
     background-color: #444;
     opacity: .9;
-    cursor: pointer;
     transition: .3s;
     font-size: 12px;
 }
@@ -906,10 +943,6 @@ img {
 
     .nav__toggle {
         display: none;
-    }
-
-    .nav__link:hover {
-        color: var(--pink-color);
     }
 
     .active::after {

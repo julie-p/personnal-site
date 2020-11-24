@@ -1,3 +1,63 @@
+/* Cursor */
+let mouseCursor = document.querySelector('.cursor');
+let navLinks = document.querySelectorAll('a');
+let skills = document.querySelectorAll('.skills__box span');
+let images = document.querySelectorAll('.about__img');
+let portfolioLink = document.querySelectorAll('.portfolio__link');
+let contactBtn = document.querySelectorAll('.contact__button a');
+
+window.addEventListener('mousemove', cursor);
+
+function cursor(e) {
+    mouseCursor.style.top = e.pageY + 'px';
+    mouseCursor.style.left = e.pageX + 'px';
+};
+
+navLinks.forEach(link => {
+    link.addEventListener('mouseover', () => {
+        mouseCursor.classList.add('link-grow');
+    });
+    link.addEventListener('mouseleave', () => {
+        mouseCursor.classList.remove('link-grow');
+    });
+});
+
+skills.forEach(skill => {
+    skill.addEventListener('mouseover', () => {
+        mouseCursor.classList.add('link-index');
+    });
+    skill.addEventListener('mouseleave', () => {
+        mouseCursor.classList.remove('link-index');
+    });
+});
+
+images.forEach(image => {
+    image.addEventListener('mouseover', () => {
+        mouseCursor.classList.add('img-index');
+    });
+    image.addEventListener('mouseleave', () => {
+        mouseCursor.classList.remove('img-index');
+    });
+});
+
+portfolioLink.forEach(link => {
+    link.addEventListener('mouseover', () => {
+        mouseCursor.classList.add('img-index');
+    });
+    link.addEventListener('mouseleave', () => {
+        mouseCursor.classList.remove('img-index');
+    });
+});
+
+contactBtn.forEach(btn => {
+    btn.addEventListener('mouseover', () => {
+        mouseCursor.classList.add('btn-bg');
+    });
+    btn.addEventListener('mouseleave', () => {
+        mouseCursor.classList.remove('btn-bg');
+    });
+});
+
 /* Loader */
 let spinnerWrapper = document.querySelector('.spinner-wrapper');
 
