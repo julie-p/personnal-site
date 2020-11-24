@@ -872,6 +872,7 @@ img {
 @media screen and (min-width: 769px) {
     body {
         margin: 0;
+        cursor: none;
     } 
 
     /* Cursor */
@@ -1003,6 +1004,10 @@ img {
     .skills__text {
         text-align: center;
         width: 70%;
+    }
+
+    .skills__name:hover {
+        cursor: none;
     }
 
     .portfolio__container {
