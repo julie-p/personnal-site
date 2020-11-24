@@ -43,10 +43,10 @@ skills.forEach(skill => {
 
 images.forEach(image => {
     image.addEventListener('mouseover', () => {
-        mouseCursor.classList.add('link-index');
+        mouseCursor.classList.add('img-index');
     });
     image.addEventListener('mouseleave', () => {
-        mouseCursor.classList.remove('link-index');
+        mouseCursor.classList.remove('img-index');
     });
 });
 

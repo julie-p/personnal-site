@@ -470,22 +470,8 @@ img {
     display: flex;
     justify-content: center;
     position: relative;
-    width: 100px;
+    width: 95px;
     height: 110px;
-    overflow: hidden;
-}
-
-.about__img::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.5;
-    background-image: linear-gradient(to bottom right,  rgb(229, 164, 209, .4), #3B4679);
-    border-radius: 50%;
     overflow: hidden;
 }
 
@@ -896,6 +882,12 @@ img {
 
     .link-index {
         z-index: 9999;
+    }
+
+    .img-index {
+        z-index: 9999;
+        transform: scale(2);
+        backdrop-filter: grayscale();
     }
 
     .btn-bg {
