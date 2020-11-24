@@ -872,7 +872,7 @@ img {
 @media screen and (min-width: 769px) {
     body {
         margin: 0;
-        cursor: none;
+        /* cursor: none; */
     } 
 
     /* Cursor */
@@ -891,26 +891,17 @@ img {
 
     .link-grow {
         transform: scale(2);
-        background: #fff;
-        opacity: .2;
+        opacity: .5;
     }
 
     .link-index {
         z-index: 9999;
     }
 
-    .img-index {
-        z-index: 9999;
-        transform: scale(1.5);
-        background: #fff;
-        opacity: .2;
-    }
-
     .btn-bg {
         z-index: 9999;
         transform: scale(2);
-        background: var(--pink-color);
-        opacity: .4;
+        border: 2px solid var(--pink-color);
     }
 
     .spinner-wrapper {

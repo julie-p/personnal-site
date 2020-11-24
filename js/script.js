@@ -1,10 +1,11 @@
 /* Cursor */
 let mouseCursor = document.querySelector('.cursor');
 let navLinks = document.querySelectorAll('a');
+let home = document.querySelectorAll('.home');
 let skills = document.querySelectorAll('.skills__box span');
 let images = document.querySelectorAll('.about__img');
 let portfolioLink = document.querySelectorAll('.portfolio__link');
-let contactBtn = document.querySelectorAll('.contact__button a');
+let contactBtn = document.querySelectorAll('.contact__button');
 
 window.addEventListener('mousemove', cursor);
 
@@ -22,6 +23,15 @@ navLinks.forEach(link => {
     });
 });
 
+home.forEach(home => {
+    home.addEventListener('mouseover', () => {
+        mouseCursor.classList.add('link-index');
+    });
+    home.addEventListener('mouseleave', () => {
+        mouseCursor.classList.remove('link-index');
+    });
+});
+
 skills.forEach(skill => {
     skill.addEventListener('mouseover', () => {
         mouseCursor.classList.add('link-index');
@@ -33,19 +43,19 @@ skills.forEach(skill => {
 
 images.forEach(image => {
     image.addEventListener('mouseover', () => {
-        mouseCursor.classList.add('img-index');
+        mouseCursor.classList.add('link-index');
     });
     image.addEventListener('mouseleave', () => {
-        mouseCursor.classList.remove('img-index');
+        mouseCursor.classList.remove('link-index');
     });
 });
 
 portfolioLink.forEach(link => {
     link.addEventListener('mouseover', () => {
-        mouseCursor.classList.add('img-index');
+        mouseCursor.classList.add('link-index');
     });
     link.addEventListener('mouseleave', () => {
-        mouseCursor.classList.remove('img-index');
+        mouseCursor.classList.remove('link-index');
     });
 });
 
