@@ -742,7 +742,6 @@ img {
 .contact__social i:hover {
     transform: scale(1.1);
     transition: .5s ease-in-out;
-    opacity: .8;
 }
 
 .contact__info {
@@ -858,6 +857,7 @@ img {
 @media screen and (min-width: 769px) {
     body {
         margin: 0;
+        overflow-x: hidden;
         cursor: none;
     } 
 
@@ -877,7 +877,7 @@ img {
 
     .link-grow {
         transform: scale(2);
-        opacity: .5;
+        opacity: .8;
     }
 
     .link-index {
