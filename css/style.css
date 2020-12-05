@@ -863,22 +863,7 @@ img {
     body {
         margin: 0;
         overflow-x: hidden;
-        cursor: none;
     } 
-
-    /* Cursor */
-    .cursor {
-        width: 2rem;
-        height: 2rem;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        pointer-events: none;
-        transition: all .2s ease;
-        transition-property: background, transform;
-        transform-origin: 100% 100%;
-    }
 
     .link-grow {
         transform: scale(2);
@@ -941,7 +926,6 @@ img {
     }
 
     .home__container {
-        /* height: 100vh; */
         grid-template-rows: 1.7fr 1fr;
         row-gap: 0;
     }
@@ -1001,10 +985,6 @@ img {
     .skills__text {
         text-align: center;
         width: 70%;
-    }
-
-    .skills__name:hover {
-        cursor: none;
     }
 
     .portfolio__container {
@@ -1067,6 +1047,7 @@ img {
 }
 
 @media screen and (min-width: 1024px){
+
     .bd-grid {
         margin-left: auto;
         margin-right: auto;

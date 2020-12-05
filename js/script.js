@@ -1,5 +1,5 @@
 /* Cursor */
-let mouseCursor = document.querySelector('.cursor');
+/* let mouseCursor = document.querySelector('.cursor');
 let navLinks = document.querySelectorAll('a');
 let home = document.querySelectorAll('.home');
 let skills = document.querySelectorAll('.skills__box span');
@@ -66,7 +66,7 @@ contactBtn.forEach(btn => {
     btn.addEventListener('mouseleave', () => {
         mouseCursor.classList.remove('btn-bg');
     });
-});
+}); */
 
 /* Loader */
 let spinnerWrapper = document.querySelector('.spinner-wrapper');
