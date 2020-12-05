@@ -916,6 +916,7 @@ img {
 
     .nav {
         height: calc(var(--header-height) + 1rem);
+        width: 90%;
     } 
 
     .nav__logo {
