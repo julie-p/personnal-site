@@ -198,7 +198,7 @@ body::before {
 .spinner:after {
     width: 90%;
     height: 90%;
-    background-image: linear-gradient(to bottom right, #3B4679, #2B3153);
+    background-image: linear-gradient(to bottom right, #3B4679, #2B3153, #49326a);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
