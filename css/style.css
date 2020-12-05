@@ -146,6 +146,7 @@ body {
     z-index: 1;
     width: 100%;
     min-height: 100vh;
+    cursor: default;
 }
 
 body::before {
@@ -442,6 +443,7 @@ img {
 
 .home__scroll-link i {
     font-size: 2rem;
+    font-weight: 300;
     margin-top: -30rem;
     transform: rotate(180deg);
 }
@@ -1067,7 +1069,6 @@ img {
     }
 
     .home__scroll-link {
-        writing-mode: vertical-lr;
         color: var(--white-color);
         letter-spacing: -1;
     }
