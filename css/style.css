@@ -192,7 +192,7 @@ body::before {
 .spinner:before {
     width: 100%;
     height: 100%;
-    background-image:linear-gradient(90deg, #a971ff 0%, #ff8eff 55%, #00f0ff 100%);
+    background-image:linear-gradient(90deg, #a971ff 0%, #ff8eff 100%);
     animation: spin .9s infinite linear;
 }
 .spinner:after {

@@ -71,7 +71,7 @@ contactBtn.forEach(btn => {
 /* Loader */
 let spinnerWrapper = document.querySelector('.spinner-wrapper');
 
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
     spinnerWrapper.parentElement.removeChild(spinnerWrapper);
 });
 
@@ -129,8 +129,7 @@ const sr = ScrollReveal({
 });
 
 /* Scroll Home */
-sr.reveal('.home__title', {origin:'bottom', delay: 200})
-sr.reveal('.home__img', {origin:'right', delay: 400});
+sr.reveal('.home__title', {origin:'bottom', delay: 400});
 
 /* Scroll About */
 sr.reveal('.about__img', {origin:'left', delay: 500});
