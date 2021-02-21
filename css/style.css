@@ -521,14 +521,14 @@ img {
     margin-top: var(--mb-4);
 }
 
-.about__social-icon {
+.social-icon {
     font-size: 1.8rem;
     margin: 0 var(--mb-1);
     color: var(--white-color);
     opacity: .6;
 }
 
-.about__social-icon:hover {
+.social-icon:hover {
     color: var(--pink-color);
     animation: color-shift 5s infinite alternate;
 }
